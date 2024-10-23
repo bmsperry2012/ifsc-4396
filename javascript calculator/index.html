@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Javascript Calculator</h2>
+        <hr>
+        <form id="calculatorForm">
+            <label for="operand1">Operand 1:</label>
+            <input type="text" id="operand1" name="operand1">
+            <span class="error" id="operand1Error">Operand 1 is Required</span>
+
+            <div class="operator-group">
+                <label>Operator:</label>
+                <input type="radio" id="add" name="operation" value="add">
+                <label for="add">+</label>
+                <input type="radio" id="subtract" name="operation" value="subtract">
+                <label for="subtract">-</label>
+                <input type="radio" id="multiply" name="operation" value="multiply">
+                <label for="multiply">*</label>
+                <input type="radio" id="divide" name="operation" value="divide">
+                <label for="divide">/</label>
+                <span class="error" id="operatorError">Operator is Required</span>
+            </div>
+
+            <label for="operand2">Operand 2:</label>
+            <input type="text" id="operand2" name="operand2">
+            <span class="error" id="operand2Error">Operand 2 is Required</span>
+
+            <div id="result">Result:</div>
+            <button type="submit">Calculate</button>
+            <button type="button" id="clear">Clear</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
