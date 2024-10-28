@@ -10,7 +10,7 @@
     <div class="container">
         <h2>Javascript Calculator</h2>
         <hr>
-        <form id="calculatorForm">
+        <form id="calculatorForm" onsubmit="return false">
             <label for="operand1">Operand 1:</label>
             <input type="text" id="operand1" name="operand1">
             <span class="error" id="operand1Error">Operand 1 is Required</span>
@@ -37,6 +37,6 @@
             <button type="button" id="clear">Clear</button>
         </form>
     </div>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
